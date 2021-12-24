@@ -30,7 +30,7 @@ As written by [John Gruber] on the [Markdown site][df1]
 - [Scroll down the profile :](#-Scroll-down-the-profile--)
 - [Get the URL posts :](#-Get-the-URL-posts--)
 - [Download all of the posts :](#-Download-all-of-the-posts--)
-- [Running :](#-Running--)- 
+- [Running :](#-Running--)
 - [Conclusion :](#-Conclusion--)
 
 
