@@ -20,18 +20,18 @@ As written by [John Gruber] on the [Markdown site][df1]
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Installation](#Installation)
-    + [_Download webdriver:_](#-Download-webdriver--)
-    + [_Installing the required libraries:_](#-Installing-the-required-libraries--)
-    + [_Importing the libraries :_](#-Importing-the-libraries---)
-- [Setting the PATH code :](#-Setting-the-PATH-code--)
-- [Get the website :](#-Get-the-website--)
-- [Login and Searchbox handling :](#-Login-and-Searchbox-handling--)
-- [Scroll down the profile :](#-Scroll-down-the-profile--)
-- [Get the URL posts :](#-Get-the-URL-posts--)
-- [Download all of the posts :](#-Download-all-of-the-posts--)
-- [Running :](#-Running--)
-- [Conclusion :](#-Conclusion--)
+- [Installation](#installation)
+    + [_Download webdriver:_](#download-webdriver)
+    + [_Installing the required libraries:_](#installing-the-required-libraries)
+    + [_Importing the libraries :_](#importing-the-libraries)
+- [Setting the PATH code :](#setting-the-PATH-code)
+- [Get the website :](#get-the-website)
+- [Login and Searchbox handling :](#login-and-Searchbox-handling)
+- [Scroll down the profile :](#scroll-down-the-profile)
+- [Get the URL posts :](#get-the-URL-posts)
+- [Download all of the posts :](#download-all-of-the-posts)
+- [Running :](#running)
+- [Conclusion :](#conclusion)
 
 
 
@@ -48,11 +48,11 @@ Selenium is useful when you have to perform an action on a website such as :
 - *Taking a screenshot*
 
 
-### Installation :
+### Installation
 We will use Chrome in our example, so make sure you have it installed on your local machine:
-##### _Download webdriver:_
+##### _Download webdriver_
 One of the tools that we must prepare to run the selenium program is webdriver (for Chrome) or geckodriver (for Firefox). You can download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads) (for Chrome user).
-##### _Installing the required libraries:_
+##### _Installing the required libraries_
 First, we must install a selenium library on our terminal such as the code below:
 ```
 pip install selenium
@@ -66,7 +66,7 @@ and
 pip install requests
 ```
 Great! Our scraping environment has been prepared, and let’s code!
-##### _Importing the libraries :_
+##### _Importing the libraries_
 Here the code about importing the required libraries for scraping using selenium:
 ```
 from selenium import webdriver
@@ -76,7 +76,7 @@ import requests
 import os 
 import argparse
 ```
-### Setting the PATH code :
+### Setting the PATH code
 The PATH code is the code that aims to connect our code with the browser. Here the code about PATH is below:
 ```sh
 # Configure environment variables path for chromedriver.exe
@@ -87,15 +87,15 @@ Or alternatively, if you saved your webdriver inside the root folder, you can si
 ```sh
 driver = webdriver.Chrome()
 ```
-### Start Connection and Login :
-#### Get the website :
+### Start Connection and Login
+#### Get the website
 After coding the PATH variable, then we must get Instagram’s website which is our scraping target. So, the code is below:
 ```sh
 # Navigate to Instagram page
 driver.get("https://www.instagram.com/")
 ```
 >This will launch Chrome in headfull mode (like regular Chrome, which is controlled by our Python code). You should see a message stating that the browser is controlled by automated software.
-#### Login and Searchbox handling :
+#### Login and Searchbox handling
 Since we’ve found the primary page of our Instagram account named home, then we must login with username and password,after that we must go to the Instagram account target by type the name of our Instagram account target in the search box located at the top of the display.
 Then, we must get the element of the search box to fill the blank box automatically.
 ```sh
@@ -128,7 +128,7 @@ Then, we must get the element of the search box to fill the blank box automatica
         time.sleep(3)
 ```
 >The code above explains that we started by login to our Instagram account, then we handled the search box automatically by creating the searchbox variable.
-#### Scroll down the profile :
+#### Scroll down the profile
 Since we have the profile page for the target user, we must think that we have already scraped this page soon. However, we must scroll down the page automatically first before. Here the code:
 ```sh
 #scroll down
@@ -161,7 +161,7 @@ while(match==False):
     if last_count==scrolldown:
         match=True
 ```
-#### Get the URL posts :
+#### Get the URL posts
 Now, time to get these URL posts which are posted in the instagram page.
 First, we must create the empty box which is used to accommodate all the URL posts named posts.
 Then, we create the links variable which is to get all the elements that have the tag name “a”.  Then, create the for loop function to get all the URL posts. 
@@ -184,7 +184,7 @@ Thus, create a folder so that we can group the downloaded images by following th
 ```
 
 
-#### Download all of the posts :
+#### Download all of the posts
 Lastly, we must download all of the posts on there, and save them to our directory. So, the code is in below:
 ```
     def download_images(self, posts): 
@@ -236,7 +236,7 @@ if __name__ == '__main__':
     posts = images.fetch_links()
     images.download_images(posts)
 ```
-#### Running :
+#### Running
 Open terminal in the directory of scraper.py and enter:
 In the first argument enter your instagram username after typing -U or -user-email, in the second enter the password after typing -P or -password, in the third enter the name of the page you want to scrape after typing -I or -instagram-page, in the fourth argument enter the number of scroll down to the bottom of the page you want after typing -S or -scrolls-number it must be an integer, and the last argument enter a file name after typing -E or -export-folder to create and store the scrapped images in this file.
 ```
@@ -247,7 +247,7 @@ Go grab a cup of coffee while waiting... oh wait, it's already done!
 ```
 python scrap.py --help
 ```
-### Conclusion :
+### Conclusion
 Finally, we have got all about the code completely in here. Here the code:
 ```
 from selenium import webdriver
@@ -379,6 +379,7 @@ if __name__ == '__main__':
 ```
 
 **The end ! Thank you all** 
+
 ***NOTE:***
 Web Scraping from many websites is Illegal.
 This project is just for Learning and Fun.
