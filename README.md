@@ -19,7 +19,7 @@ As written by [John Gruber] on the [Markdown site][df1]
 
 ## Table of Contents
 
-- [Introduction](#-Introduction-)
+- [Introduction](#introduction)
 - [Installation](#Installation)
     + [_Download webdriver:_](#-Download-webdriver--)
     + [_Installing the required libraries:_](#-Installing-the-required-libraries--)
@@ -35,7 +35,7 @@ As written by [John Gruber] on the [Markdown site][df1]
 
 
 
-## Introduction : 
+## Introduction
 Selenium is a Python library and tool used for automating web browsers to do a number of tasks. One of such is web-scraping to extract useful data and information that may be otherwise unavailable.
 ![N|Solid](https://bs-uploads.toptal.io/blackfish-uploads/uploaded_file/file/253814/image-1589553330104-3887f4e1986e94fea6b7b2fbf7a2fbcb.png)
 ##### _Why using Selenium?_
