@@ -1,6 +1,6 @@
 ## Web Scraping images using Selenium and Python
 ![N|Solid](https://d33wubrfki0l68.cloudfront.net/c82a4677a33f15b40da09166e14505dffc14eb1d/890b9/blog/selenium-python/header_selenium_python_hu858c713577cea0e612703bbde5071118_85692_1200x0_resize_catmullrom_2.png)
-## A propos de ce document
+## About this document
 This is a markdown document about Web scraping images using Selenium and python. The document summarizes the presentation which has been divided in 2 parts: general presentation and workshop (the workshop is the tutorial in the table of contents).
 Author : 
 - Nafaa BOUGRAINE [Linkedin](https://www.linkedin.com/in/nafaa-bougraine/) <nafaa.bougraine@um5r.ac.ma>  
